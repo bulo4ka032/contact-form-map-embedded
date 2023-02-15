@@ -2,6 +2,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .section {
     width: 1440px;
     margin-right: auto;
@@ -15,6 +19,15 @@ h1, h2, h3 {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+
+    background: url(../img/clouds.svg);
+    animation: anim 90s linear infinite;
+    background-size: contain;
+}
+
+@keyframes anim {
+    0% { background-position: 0px;}
+    0% { background-position: 1468.79px;}
 }
 
 .form {
@@ -91,6 +104,7 @@ h1, h2, h3 {
 }
 
 .footer {
+    position: relative;
     background: #FAFAFA;
     border: 1px solid #D8D8D8;
     padding-top: 79px;
@@ -102,4 +116,44 @@ h1, h2, h3 {
 
 .social:not(:last-child) {
     margin-right: 26px;
+}
+
+/* Cartoons */
+
+.cartoon-icon {
+    position: absolute;
+}
+
+.footer-pink {
+    bottom: 0;
+    right: 280px;
+}
+.footer-mint {
+    top: 0;
+    right: 127.54px;
+}
+
+.footer-yellow {
+    top: 55px;
+    right: 15px;
+}
+
+.main-sun {
+    top: 21px;
+    left: 714px;
+}
+
+.main-pink {
+   bottom: 96px;
+   left: 765px;
+}
+
+.main-big-yellow {
+  bottom: 285.07px;
+  left: 763.21px;
+}
+
+.main-yellow {
+  top: 23px;
+  left: 29px;
 }
